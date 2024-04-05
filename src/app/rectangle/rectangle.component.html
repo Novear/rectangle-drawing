@@ -1,0 +1,4 @@
+<svg (mousedown)="startResize($event)" (mousemove)="resize($event)" (mouseup)="endResize($event)">
+    <rect [attr.width]="rectangleWidth" [attr.height]="rectangleHeight" fill="transparent" stroke="black"></rect>
+</svg>
+<div>Perimeter: {{ calculatePerimeter() }}</div>
